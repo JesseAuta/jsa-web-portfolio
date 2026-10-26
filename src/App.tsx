@@ -3,9 +3,9 @@ import { QRCodeSVG } from 'qrcode.react'
 const expertise = [
   {
     number: '01',
-    title: 'Web and Software development',
+    title: 'Full-Stack Web & Software Development',
     description:
-      'Building thoughtful web applications and software with a focus on clear, user-friendly experiences and dependable delivery.',
+      'Building full-stack web applications and software, from thoughtful user interfaces to reliable functionality.',
     tags: ['Web applications', 'React & Next.js', 'TypeScript'],
   },
   {
@@ -32,7 +32,7 @@ const experiences = [
     title: 'IT Services Specialist & Systems Administrator',
     organization: 'Digital Impacts',
     description:
-      'Working across web and software development and systems administration, bringing a service-first perspective to the technology people rely on.',
+      'Working across full-stack web and software development and systems administration, bringing a service-first perspective to the technology people rely on.',
     mark: 'DI',
   },
   {
@@ -116,7 +116,7 @@ function App() {
           <div className="hero-copy">
             <div className="eyebrow">
               <span className="status-dot" />
-              IT · WEB · SYSTEMS
+              IT · FULL-STACK · SOFTWARE
             </div>
             <h1>
               Technology,
@@ -125,8 +125,8 @@ function App() {
             </h1>
             <p className="hero-description">
               I’m Jesse — an IT Services Specialist &amp; Systems
-              Administrator focused on web and software development at Digital
-              Impacts.
+              Administrator focused on full-stack web and software development
+              at Digital Impacts.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#expertise">
@@ -180,10 +180,10 @@ function App() {
             </h2>
             <div className="intro-aside">
               <p>
-                My work sits at the intersection of IT services, web and
-                software development, and systems administration. I care about
-                making technology practical: easy to use, reliable, and built
-                around real needs.
+                My work sits at the intersection of IT services, full-stack web
+                and software development, and systems administration. I care
+                about making technology practical: easy to use, reliable, and
+                built around real needs.
               </p>
               <p className="intro-note">
                 Clear thinking. Useful solutions. A thoughtful experience.
@@ -247,7 +247,7 @@ function App() {
                   <span className="project-window-label">JESSE AUTA</span>
                 </div>
                 <div className="project-window-content">
-                  <span className="project-window-kicker">IT · WEB · SYSTEMS</span>
+                  <span className="project-window-kicker">IT · FULL-STACK · SOFTWARE</span>
                   <span className="project-window-title">
                     Technology,
                     <br />
@@ -264,8 +264,8 @@ function App() {
               <h3>Jesse Auta — Portfolio</h3>
               <p>
                 Designed and built with React, TypeScript, and Vite. A
-                responsive portfolio showcasing my experience in web and
-                software development and IT systems administration.
+                responsive portfolio showcasing my experience as a full-stack
+                web and software developer and IT systems administrator.
               </p>
               <ul className="tag-list" aria-label="Project technologies">
                 <li>React</li>
@@ -370,7 +370,7 @@ function App() {
           <span className="wordmark-mark">J</span>
           <span>JESSE AUTA</span>
         </a>
-        <span className="footer-note">IT · WEB · SYSTEMS</span>
+        <span className="footer-note">IT · FULL-STACK · SOFTWARE</span>
         <a
           className="footer-github"
           href="https://github.com/JesseAuta"
