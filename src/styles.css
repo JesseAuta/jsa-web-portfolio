@@ -864,28 +864,31 @@ h1 {
   font-size: 12px;
 }
 
-.closing-stamp {
-  width: 205px;
-  height: 205px;
+.portfolio-qr {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   margin-right: 8%;
-  transform: rotate(12deg);
-  border: 1px solid #48543b;
-  border-radius: 50%;
-  color: #bdcb9d;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #171916;
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 0.22em;
 }
 
-.stamp-star {
-  color: var(--accent);
-  font-size: 40px;
-  line-height: 1;
+.portfolio-qr svg {
+  display: block;
+  width: min(132px, 100%);
+  height: auto;
+}
+
+.portfolio-qr span {
+  white-space: nowrap;
 }
 
 .site-footer {
@@ -1132,6 +1135,8 @@ h1 {
 
   .closing {
     min-height: 400px;
+    flex-direction: column;
+    align-items: flex-start;
     padding-block: 65px;
   }
 
@@ -1139,18 +1144,10 @@ h1 {
     font-size: clamp(49px, 13vw, 68px);
   }
 
-  .closing-stamp {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    right: -7px;
-    bottom: 32px;
+  .portfolio-qr {
+    align-self: flex-end;
     margin: 0;
-    opacity: 0.55;
-  }
-
-  .stamp-star {
-    font-size: 24px;
+    padding: 10px;
   }
 
   .closing-copy > p {

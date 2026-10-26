@@ -1,3 +1,5 @@
+import { QRCodeSVG } from 'qrcode.react'
+
 const expertise = [
   {
     number: '01',
@@ -21,6 +23,8 @@ const expertise = [
     tags: ['IT services', 'Troubleshooting', 'User-first'],
   },
 ]
+
+const portfolioUrl = 'https://jesseauta.github.io/jsa-web-portfolio/'
 
 const experiences = [
   {
@@ -341,11 +345,22 @@ function App() {
               Connect on LinkedIn <ExternalIcon />
             </a>
           </div>
-          <div className="closing-stamp" aria-hidden="true">
-            <span>CURIOUS</span>
-            <span className="stamp-star">✳</span>
-            <span>ALWAYS</span>
-          </div>
+          <a
+            className="portfolio-qr"
+            href={portfolioUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Scan the QR code or open Jesse Auta's portfolio"
+          >
+            <QRCodeSVG
+              value={portfolioUrl}
+              size={132}
+              level="Q"
+              marginSize={2}
+              title="QR code linking to Jesse Auta's portfolio"
+            />
+            <span>SCAN TO VISIT</span>
+          </a>
         </section>
       </main>
 
