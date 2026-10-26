@@ -761,7 +761,7 @@ h1 {
 }
 
 .experience-panel {
-  min-height: 230px;
+  min-height: 190px;
   position: relative;
   display: grid;
   grid-template-columns: 0.42fr 1fr;
@@ -774,6 +774,10 @@ h1 {
   background:
     radial-gradient(ellipse at 93% 20%, #c8f1690a, transparent 27%),
     var(--surface);
+}
+
+.experience-panel + .experience-panel {
+  margin-top: 16px;
 }
 
 .experience-date {
@@ -808,6 +812,10 @@ h1 {
   max-width: 490px;
   margin-bottom: 0;
   font-size: 11px;
+}
+
+.experience-link {
+  margin-top: 14px;
 }
 
 .experience-mark {

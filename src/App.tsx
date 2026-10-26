@@ -1,10 +1,10 @@
 const expertise = [
   {
     number: '01',
-    title: 'Web development',
+    title: 'Web and Software development',
     description:
-      'Building thoughtful, responsive web experiences with a focus on clarity, usability, and dependable delivery.',
-    tags: ['Frontend', 'Responsive UI', 'Web experiences'],
+      'Building thoughtful web applications and software with a focus on clear, user-friendly experiences and dependable delivery.',
+    tags: ['Web applications', 'React & Next.js', 'TypeScript'],
   },
   {
     number: '02',
@@ -19,6 +19,33 @@ const expertise = [
     description:
       'Bringing a service-minded approach to IT: solving practical problems and making technology easier to work with.',
     tags: ['IT services', 'Troubleshooting', 'User-first'],
+  },
+]
+
+const experiences = [
+  {
+    type: 'CURRENT ROLE',
+    title: 'IT & Services Specialist',
+    organization: 'Digital Impacts',
+    description:
+      'Working across web development and IT systems administration, bringing a service-first perspective to the technology people rely on.',
+    mark: 'DI',
+  },
+  {
+    type: 'INTERNSHIP',
+    title: 'Intern',
+    organization: 'Crowds One Voice',
+    description: 'Internship experience with Crowds One Voice.',
+    mark: 'CV',
+  },
+  {
+    type: 'TEAM PROJECT',
+    title: 'JOM — Auto Repair Service Platform',
+    organization: 'JOM team project',
+    description:
+      'Collaborated on a web platform for an auto repair service, featuring service search and an interactive location map.',
+    mark: 'JOM',
+    link: 'https://github.com/JesseAuta/JOM',
   },
 ]
 
@@ -257,24 +284,33 @@ function App() {
             <span className="section-number">04 — EXPERIENCE</span>
             <span className="section-rule" />
           </div>
-          <div className="experience-panel">
-            <div className="experience-date">
-              <span className="status-dot" />
-              CURRENT ROLE
-            </div>
-            <div className="experience-details">
-              <h2>IT &amp; Services Specialist</h2>
-              <p className="experience-company">Digital Impacts</p>
-              <p className="experience-summary">
-                Working across web development and IT systems administration,
-                bringing a service-first perspective to the technology people
-                rely on.
-              </p>
-            </div>
-            <span className="experience-mark" aria-hidden="true">
-              DI<span>.</span>
-            </span>
-          </div>
+          {experiences.map((experience) => (
+            <article className="experience-panel" key={experience.organization}>
+              <div className="experience-date">
+                {experience.type === 'CURRENT ROLE' && <span className="status-dot" />}
+                {experience.type}
+              </div>
+              <div className="experience-details">
+                <h2>{experience.title}</h2>
+                <p className="experience-company">{experience.organization}</p>
+                <p className="experience-summary">{experience.description}</p>
+                {experience.link && (
+                  <a
+                    className="project-link experience-link"
+                    href={experience.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View JOM on GitHub <ExternalIcon />
+                  </a>
+                )}
+              </div>
+              <span className="experience-mark" aria-hidden="true">
+                {experience.mark}
+                <span>.</span>
+              </span>
+            </article>
+          ))}
         </section>
 
         <section className="closing section-shell" id="contact">
