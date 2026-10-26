@@ -29,10 +29,10 @@ const portfolioUrl = 'https://jesseauta.github.io/jsa-web-portfolio/'
 const experiences = [
   {
     type: 'CURRENT ROLE',
-    title: 'IT & Services Specialist',
+    title: 'IT Services Specialist & Systems Administrator',
     organization: 'Digital Impacts',
     description:
-      'Working across web development and IT systems administration, bringing a service-first perspective to the technology people rely on.',
+      'Working across web and software development and systems administration, bringing a service-first perspective to the technology people rely on.',
     mark: 'DI',
   },
   {
@@ -124,8 +124,9 @@ function App() {
               made <span className="highlight">useful.</span>
             </h1>
             <p className="hero-description">
-              I’m Jesse — an IT &amp; Services Specialist working across web
-              development and IT systems administration at Digital Impacts.
+              I’m Jesse — an IT Services Specialist &amp; Systems
+              Administrator focused on web and software development at Digital
+              Impacts.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#expertise">
@@ -179,10 +180,10 @@ function App() {
             </h2>
             <div className="intro-aside">
               <p>
-                My work sits at the intersection of IT services, web
-                development, and systems administration. I care about making
-                technology practical: easy to use, reliable, and built around
-                real needs.
+                My work sits at the intersection of IT services, web and
+                software development, and systems administration. I care about
+                making technology practical: easy to use, reliable, and built
+                around real needs.
               </p>
               <p className="intro-note">
                 Clear thinking. Useful solutions. A thoughtful experience.
@@ -263,8 +264,8 @@ function App() {
               <h3>Jesse Auta — Portfolio</h3>
               <p>
                 Designed and built with React, TypeScript, and Vite. A
-                responsive home for my experience across web development and
-                IT systems administration.
+                responsive portfolio showcasing my experience in web and
+                software development and IT systems administration.
               </p>
               <ul className="tag-list" aria-label="Project technologies">
                 <li>React</li>
